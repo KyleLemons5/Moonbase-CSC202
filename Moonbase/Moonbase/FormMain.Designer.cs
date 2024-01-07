@@ -39,8 +39,15 @@
             eastButton = new System.Windows.Forms.Button();
             westButton = new System.Windows.Forms.Button();
             northButton = new System.Windows.Forms.Button();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            JobLabel = new System.Windows.Forms.Label();
+            JobText = new System.Windows.Forms.TextBox();
+            NameLabel = new System.Windows.Forms.Label();
+            NameText = new System.Windows.Forms.TextBox();
+            UserText = new System.Windows.Forms.Label();
             groupBoxLI.SuspendLayout();
             navBox.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBoxLI
@@ -145,12 +152,72 @@
             northButton.UseVisualStyleBackColor = true;
             northButton.Click += northButton_Click;
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(JobLabel);
+            groupBox1.Controls.Add(JobText);
+            groupBox1.Controls.Add(NameLabel);
+            groupBox1.Controls.Add(NameText);
+            groupBox1.Controls.Add(UserText);
+            groupBox1.Location = new System.Drawing.Point(156, 444);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(238, 175);
+            groupBox1.TabIndex = 2;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Who's Here";
+            // 
+            // JobLabel
+            // 
+            JobLabel.AutoSize = true;
+            JobLabel.Location = new System.Drawing.Point(119, 44);
+            JobLabel.Name = "JobLabel";
+            JobLabel.Size = new System.Drawing.Size(50, 15);
+            JobLabel.TabIndex = 4;
+            JobLabel.Text = "Job Title";
+            // 
+            // JobText
+            // 
+            JobText.Location = new System.Drawing.Point(119, 62);
+            JobText.Multiline = true;
+            JobText.Name = "JobText";
+            JobText.Size = new System.Drawing.Size(113, 107);
+            JobText.TabIndex = 3;
+            JobText.Text = "Librarian\r\n";
+            // 
+            // NameLabel
+            // 
+            NameLabel.AutoSize = true;
+            NameLabel.Location = new System.Drawing.Point(6, 44);
+            NameLabel.Name = "NameLabel";
+            NameLabel.Size = new System.Drawing.Size(39, 15);
+            NameLabel.TabIndex = 2;
+            NameLabel.Text = "Name";
+            // 
+            // NameText
+            // 
+            NameText.Location = new System.Drawing.Point(6, 62);
+            NameText.Multiline = true;
+            NameText.Name = "NameText";
+            NameText.Size = new System.Drawing.Size(107, 107);
+            NameText.TabIndex = 1;
+            NameText.Text = "John\r\nJohnny";
+            // 
+            // UserText
+            // 
+            UserText.AutoSize = true;
+            UserText.Location = new System.Drawing.Point(6, 19);
+            UserText.Name = "UserText";
+            UserText.Size = new System.Drawing.Size(51, 15);
+            UserText.TabIndex = 0;
+            UserText.Text = "UserText";
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Moonbase_Room;
             ClientSize = new System.Drawing.Size(1904, 1041);
+            Controls.Add(groupBox1);
             Controls.Add(navBox);
             Controls.Add(groupBoxLI);
             Name = "FormMain";
@@ -159,6 +226,8 @@
             groupBoxLI.ResumeLayout(false);
             groupBoxLI.PerformLayout();
             navBox.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -174,5 +243,11 @@
         private System.Windows.Forms.Button eastButton;
         private System.Windows.Forms.Button westButton;
         private System.Windows.Forms.Button northButton;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.TextBox NameText;
+        private System.Windows.Forms.Label UserText;
+        private System.Windows.Forms.TextBox JobText;
+        private System.Windows.Forms.Label JobLabel;
     }
 }
