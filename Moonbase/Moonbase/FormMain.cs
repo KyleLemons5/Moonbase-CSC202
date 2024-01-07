@@ -1,7 +1,7 @@
 ﻿// Kyle Lemons
 // CSC202
 // 9/19/23
-// Last Edited: 9/26/23
+// Last Edited: 10/10/23
 /*
  *                           Map (not to scale)
  *                             ______________
@@ -47,6 +47,9 @@ namespace Moonbase
             textBoxName.Text = location;
             textBoxDesc.Text = "A small room near the corner of the base. This room is primarily used as a quiet room far away from the main common areas. Many people come here to read, but others use this place as a private area to play games or have private conversations.";
             ActiveForm.BackgroundImage = Properties.Resources.Moonbase_Room;
+            eastButton.Enabled = true;
+            northButton.Enabled = false;
+            southButton.Enabled = false;
         }
 
         // "Moves" the user to the Hallway by updating all relevant components to the Hallway settings
@@ -56,6 +59,10 @@ namespace Moonbase
             textBoxName.Text = location;
             textBoxDesc.Text = "The hallway between the bedrooms of Craterville's residents. The hallway also leads to the dining room and reading room. Many people come through this place every day. It is standard protocol to greet anyone you way see in these halls to avoid potentail interpersonal issues.";
             ActiveForm.BackgroundImage = Properties.Resources.Moonbase_Hall;
+            northButton.Enabled = true;
+            southButton.Enabled = true;
+            westButton.Enabled = true;
+            eastButton.Enabled = true;
         }
 
         // "Moves" the user to the Dining Room by updating all relevant components to the Dining Room settings
@@ -65,6 +72,9 @@ namespace Moonbase
             textBoxName.Text = location;
             textBoxDesc.Text = "This is the most active room in all of Craterville. Residents come to eat and enjoy eachother's company. The food selection is quite limited with only dehydrated foods being available. This room is also often host to larger group activities and meetings.";
             ActiveForm.BackgroundImage = Properties.Resources.Moonbase_Dining;
+            northButton.Enabled = false;
+            southButton.Enabled = false;
+            westButton.Enabled = false;
         }
 
         // "Moves" the user to the Outside by updating all relevant components to the Outside settings
@@ -74,11 +84,38 @@ namespace Moonbase
             textBoxName.Text = location;
             textBoxDesc.Text = "Only a small layer of spacesuit protects you from the cold embrace of space. Outside the base is completely silent due to a lask of atmosphere. The moondust is a sharp powder due to millions of small meteorite impacts and no atmosphere to errode away the sharp edges. The dust is also electrostatically charged, sticking to any surface it comes into contact with. There's nothing to do out here except check on equipment occasionally.";
             ActiveForm.BackgroundImage = Properties.Resources.Moonbase_Outside;
+            eastButton.Enabled = false;
+        }
+
+        // "Moves" the user to the North Bedroom by updating all relevant components to the North Bedroom settings
+        private void moveToNorthBedroom()
+        {
+            location = "North Bedroom";
+            textBoxName.Text = location;
+            textBoxDesc.Text = "The bedrooms in the northern section of Craterville. Higher ranking offcials get their own private bedrooms here. Some offcials use their bedrooms as personal offices.";
+            ActiveForm.BackgroundImage = Properties.Resources.Moonbase_Bedroom_1;
+            northButton.Enabled = false;
+            eastButton.Enabled = false;
+            westButton.Enabled = false;
+        }
+
+        // "Moves" the user to the South Bedroom by updating all relevant components to the South Bedroom settings
+        private void moveToSouthBedroom()
+        {
+            location = "South Bedroom";
+            textBoxName.Text = location;
+            textBoxDesc.Text = "The bedrroms in the southern section od Craterville. Here several beds are packed into the same rooms to save space. Some people host lite night gatherings here with thier roommates.";
+            ActiveForm.BackgroundImage = Properties.Resources.Moonbase_Bedroom_1;
+            southButton.Enabled = false;
+            eastButton.Enabled = false;
+            westButton.Enabled = false;
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
             location = textBoxName.Text; // Upon loading the form, set the location to the current location text name
+            northButton.Enabled = false;
+            southButton.Enabled = false;
         }
 
         // "Moves" the user to the west by by calling the correct room update
@@ -93,7 +130,7 @@ namespace Moonbase
             {
                 moveToDining();
             }
-            
+
             else if (location == "Outside")
             {
                 moveToReadingRoom();
@@ -114,6 +151,34 @@ namespace Moonbase
             }
 
             else if (location == "Dining Room")
+            {
+                moveToHallway();
+            }
+        }
+
+        // "Moves" the user to the north by by calling the correct room update
+        private void northButton_Click(object sender, EventArgs e)
+        {
+            if (location == "Hallway")
+            {
+                moveToNorthBedroom();
+            }
+
+            else if (location == "South Bedroom")
+            {
+                moveToHallway();
+            }
+        }
+
+        // "Moves" the user to the south by by calling the correct room update
+        private void southButton_Click(object sender, EventArgs e)
+        {
+            if (location == "Hallway")
+            {
+                moveToSouthBedroom();
+            }
+
+            else if (location == "North Bedroom")
             {
                 moveToHallway();
             }

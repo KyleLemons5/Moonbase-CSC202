@@ -113,6 +113,7 @@
             southButton.TabIndex = 3;
             southButton.Text = "South";
             southButton.UseVisualStyleBackColor = true;
+            southButton.Click += southButton_Click;
             // 
             // eastButton
             // 
@@ -142,6 +143,7 @@
             northButton.TabIndex = 0;
             northButton.Text = "North";
             northButton.UseVisualStyleBackColor = true;
+            northButton.Click += northButton_Click;
             // 
             // FormMain
             // 
