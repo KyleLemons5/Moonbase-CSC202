@@ -180,6 +180,7 @@
             JobText.Location = new System.Drawing.Point(119, 62);
             JobText.Multiline = true;
             JobText.Name = "JobText";
+            JobText.ReadOnly = true;
             JobText.Size = new System.Drawing.Size(113, 107);
             JobText.TabIndex = 3;
             JobText.Text = "Librarian\r\n";
@@ -198,6 +199,7 @@
             NameText.Location = new System.Drawing.Point(6, 62);
             NameText.Multiline = true;
             NameText.Name = "NameText";
+            NameText.ReadOnly = true;
             NameText.Size = new System.Drawing.Size(107, 107);
             NameText.TabIndex = 1;
             NameText.Text = "John\r\nJohnny";

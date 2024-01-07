@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 9.1 Kyle Lemons\\Moonbase\\Moonbase\\Moonbase.csproj": {}
+    "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 10.1 Kyle Lemons\\Moonbase\\Moonbase\\Moonbase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 9.1 Kyle Lemons\\Moonbase\\Moonbase\\Moonbase.csproj": {
+    "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 10.1 Kyle Lemons\\Moonbase\\Moonbase\\Moonbase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 9.1 Kyle Lemons\\Moonbase\\Moonbase\\Moonbase.csproj",
+        "projectUniqueName": "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 10.1 Kyle Lemons\\Moonbase\\Moonbase\\Moonbase.csproj",
         "projectName": "Moonbase",
-        "projectPath": "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 9.1 Kyle Lemons\\Moonbase\\Moonbase\\Moonbase.csproj",
+        "projectPath": "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 10.1 Kyle Lemons\\Moonbase\\Moonbase\\Moonbase.csproj",
         "packagesPath": "C:\\Users\\annot_xbmys0o\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 9.1 Kyle Lemons\\Moonbase\\Moonbase\\obj\\",
+        "outputPath": "C:\\Users\\annot_xbmys0o\\source\\repos\\Moonbase Assignment 10.1 Kyle Lemons\\Moonbase\\Moonbase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\annot_xbmys0o\\AppData\\Roaming\\NuGet\\NuGet.Config",

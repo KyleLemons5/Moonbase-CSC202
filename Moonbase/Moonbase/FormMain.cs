@@ -1,7 +1,7 @@
 ﻿// Kyle Lemons
 // CSC202
 // 9/19/23
-// Last Edited: 11/7/23
+// Last Edited: 11/14/23
 /*
  *                           Map (not to scale)
  *                             ______________
@@ -39,14 +39,16 @@ namespace Moonbase
         // All locations in the moonbase
         private static string[] temp = new string[5];
         private static NPC[] temp2 = new NPC[5];
-        Location readingRoom = new Location("Reading Room", temp, "Resources\\Moonbase Room.jpg", temp2, false, false, true, true);
-        Location hallway = new Location("Hallway", temp, "Resources\\Moonbase Hall.jpg", temp2, true, true, true, true);
-        Location diningRoom = new Location("Dining Room", temp, "Resources\\Moonbase Dining.jpg", temp2, false, false, false, true);
-        Location outside = new Location("Outside", temp, "Resources\\Moonbase Outside.jpg", temp2, false, false, true, false);
-        Location northBedroom = new Location("North Bedroom", temp, "Resources\\Moonbase Bedroom 1.jpg", temp2, false, true, false, false);
-        Location southBedroom = new Location("South Bedroom", temp, "Resources\\Moonbase Bedroom 2.jpg", temp2, true, false, false, false);
+        static Location readingRoom = new Location("Reading Room", temp, "Resources\\Moonbase Room.jpg", "Resources\\Reading Room.wav", temp2, false, false, true, true);
+        Location hallway = new Location("Hallway", temp, "Resources\\Moonbase Hall.jpg", "Resources\\Hallway.wav", temp2, true, true, true, true);
+        Location diningRoom = new Location("Dining Room", temp, "Resources\\Moonbase Dining.jpg", "Resources\\Dining.wav", temp2, false, false, false, true);
+        Location outside = new Location("Outside", temp, "Resources\\Moonbase Outside.jpg", "Resources\\Outside.wav", temp2, false, false, true, false);
+        Location northBedroom = new Location("North Bedroom", temp, "Resources\\Moonbase Bedroom 1.jpg", "Resources\\North Bedroom.wav", temp2, false, true, false, false);
+        Location southBedroom = new Location("South Bedroom", temp, "Resources\\Moonbase Bedroom 2.jpg", "Resources\\South Bedroom.wav", temp2, true, false, false, false);
 
         Actor user = new Actor("Reading Room"); // User Actor
+
+        SoundPlayer player = new SoundPlayer(readingRoom.getSound()); // Sets the initial value of the sound player to the music of the starting room
 
         public FormMain()
         {
@@ -132,6 +134,7 @@ namespace Moonbase
         // "Moves" the user to the location given to the method
         private void moveTo(Location room)
         {
+            player.Stop();
             string[] desc = room.getDescription();
             Random rand = new Random();
             user.setLocation(room.getLocation());
@@ -150,6 +153,9 @@ namespace Moonbase
                 NameText.AppendText(npcList[i].getName() + Environment.NewLine);
                 JobText.AppendText(npcList[i].getJob() + Environment.NewLine);
             }
+
+            player = new SoundPlayer(room.getSound());
+            player.PlayLooping();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -158,6 +164,7 @@ namespace Moonbase
             northButton.Enabled = false;
             southButton.Enabled = false;
             UserText.Text = user.getName() + " - New Arrival";
+            player.PlayLooping();
         }
 
         // "Moves" the user to the west by by calling the correct room update
@@ -234,6 +241,7 @@ namespace Moonbase
         private string location;
         private string[] description;
         private string image;
+        private string sound;
         private NPC[] npcList;
         private Boolean north;
         private Boolean south;
@@ -241,12 +249,14 @@ namespace Moonbase
         private Boolean east;
 
         // Constructor of Location that gets and stores all the information of a location
-        public Location(string location, string[] description, string image, NPC[] npcList, bool north, bool south, bool west, bool east)
+        public Location(string location, string[] description, string image, string sound, NPC[] npcList, bool north, bool south, bool west, bool east)
         {
             this.location = location;
             this.description = description;
             image = Path.GetFullPath(image); // Gets the full path of an image, so it can be correctly called later
             this.image = image;
+            sound = Path.GetFullPath(sound); // Gets the full path of a sound, so it can be correctly called later
+            this.sound = sound;
             this.npcList = npcList;
             this.north = north;
             this.south = south;
@@ -267,7 +277,14 @@ namespace Moonbase
 
         public void setImage(string image)
         {
+            image = Path.GetFullPath(image);
             this.image = image;
+        }
+
+        public void setSound(string sound)
+        {
+            sound = Path.GetFullPath(sound);
+            this.sound = sound;
         }
 
         public void setNPCList(NPC[] npcList)
@@ -307,6 +324,11 @@ namespace Moonbase
         public string getImage()
         {
             return image;
+        }
+
+        public string getSound()
+        {
+            return sound;
         }
 
         public NPC[] getNPCList()
