@@ -4,7 +4,6 @@ C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Mo
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.runtimeconfig.dev.json
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.dll
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.pdb
-C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.FormMain.resources
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.Properties.Resources.resources
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.csproj.GenerateResource.cache
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.GeneratedMSBuildEditorConfig.editorconfig
@@ -14,19 +13,4 @@ C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Mo
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.dll
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.pdb
 C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.genruntimeconfig.cache
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.exe
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.deps.json
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.runtimeconfig.json
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.runtimeconfig.dev.json
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.dll
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\bin\Debug\netcoreapp3.1\Moonbase.pdb
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.FormMain.resources
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.Properties.Resources.resources
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.csproj.GenerateResource.cache
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.AssemblyInfoInputs.cache
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.AssemblyInfo.cs
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.csproj.CoreCompileInputs.cache
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.dll
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.pdb
-C:\Users\annot_xbmys0o\source\repos\Moonbase Assignment 5.1 Kyle Lemons\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.genruntimeconfig.cache
+C:\Users\annot_xbmys0o\source\repos\Moonbase\Moonbase\obj\Debug\netcoreapp3.1\Moonbase.FormMain.resources
